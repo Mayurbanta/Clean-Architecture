@@ -183,26 +183,8 @@ The `FakeEmployeeRepository` contains 5 hardcoded employees (try 101–105):
 | 103 | Amit Kumar | Finance | 80,000 | 6,000 | 4,000 |
 | 104 | Sneha Reddy | Engineering | 90,000 | 8,000 | 5,000 |
 | 105 | Vikram Singh | Marketing | 60,000 | 3,000 | 2,000 |
-
----
-
-## How to Debug (Step-by-Step)
-
-1. Open `MySolution.sln` in Visual Studio
-2. Set breakpoints at:
-   - **Program.cs** → `Main()` — See dependency wiring
-   - **Employee.cs** → `btnCalculateSalary_Click` — UI entry point
-   - **SalaryService.cs** → `GetEmployeeSalary` — Application orchestration
-   - **FakeEmployeeRepository.cs** → `GetByEmployeeNumber` — Data access
-   - **SalaryCalculator.cs** → `CalculateNetSalary` — Calculation
-3. Press **F5**, enter employee number **101–105**, click "Calculate Salary"
-4. Use **F11 (Step Into)** to follow the flow across layers
-
 ---
 
 ## Technology Stack
-
-- **.NET Framework 4.8**
-- **Windows Forms** (WinForms)
 - **C#**
-- **Visual Studio 2019**
+
